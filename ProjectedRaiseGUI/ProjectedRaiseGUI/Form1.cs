@@ -16,5 +16,18 @@ namespace ProjectedRaiseGUI
         {
             InitializeComponent();
         }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            double currentSal;
+            double raisedSal;
+            double raise = 1.04;
+
+            currentSal = Convert.ToDouble(txtCurrentSalary.Text);
+           
+            raisedSal = currentSal * raise;
+
+            lblResult.Text = "Your total salary for next year is " + raisedSal.ToString("C");
+        }
     }
 }

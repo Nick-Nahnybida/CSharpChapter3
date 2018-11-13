@@ -32,6 +32,7 @@
             this.txtCurrentSalary = new System.Windows.Forms.TextBox();
             this.lblNextSalary = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnConvert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvlCurrentSalary
@@ -64,14 +65,25 @@
             this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblResult.Location = new System.Drawing.Point(364, 152);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(100, 23);
+            this.lblResult.Size = new System.Drawing.Size(252, 23);
             this.lblResult.TabIndex = 3;
+            // 
+            // btnConvert
+            // 
+            this.btnConvert.Location = new System.Drawing.Point(112, 223);
+            this.btnConvert.Name = "btnConvert";
+            this.btnConvert.Size = new System.Drawing.Size(75, 23);
+            this.btnConvert.TabIndex = 4;
+            this.btnConvert.Text = "Convert Salary";
+            this.btnConvert.UseVisualStyleBackColor = true;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
             // ProjectedRaises
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblNextSalary);
             this.Controls.Add(this.txtCurrentSalary);
@@ -89,6 +101,7 @@
         private System.Windows.Forms.TextBox txtCurrentSalary;
         private System.Windows.Forms.Label lblNextSalary;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnConvert;
     }
 }
 
