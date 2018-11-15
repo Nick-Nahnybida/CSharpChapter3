@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMadLibsGUI));
             this.lblColor = new System.Windows.Forms.Label();
             this.lblWordEndingEST = new System.Windows.Forms.Label();
             this.lblBodyPartPlural = new System.Windows.Forms.Label();
@@ -46,6 +47,8 @@
             this.txtNumberB = new System.Windows.Forms.TextBox();
             this.btnCreateStory = new System.Windows.Forms.Button();
             this.lblStoryResult = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblColor
@@ -178,7 +181,7 @@
             // 
             // btnCreateStory
             // 
-            this.btnCreateStory.Location = new System.Drawing.Point(305, 73);
+            this.btnCreateStory.Location = new System.Drawing.Point(314, 306);
             this.btnCreateStory.Name = "btnCreateStory";
             this.btnCreateStory.Size = new System.Drawing.Size(75, 23);
             this.btnCreateStory.TabIndex = 16;
@@ -189,16 +192,27 @@
             // lblStoryResult
             // 
             this.lblStoryResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblStoryResult.Location = new System.Drawing.Point(305, 113);
+            this.lblStoryResult.Location = new System.Drawing.Point(432, 310);
             this.lblStoryResult.Name = "lblStoryResult";
-            this.lblStoryResult.Size = new System.Drawing.Size(483, 328);
+            this.lblStoryResult.Size = new System.Drawing.Size(324, 111);
             this.lblStoryResult.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(432, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(310, 246);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMadLibsGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblStoryResult);
             this.Controls.Add(this.btnCreateStory);
             this.Controls.Add(this.txtNumberB);
@@ -219,6 +233,7 @@
             this.Controls.Add(this.lblColor);
             this.Name = "frmMadLibsGUI";
             this.Text = "MadLibGUI";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,6 +259,7 @@
         private System.Windows.Forms.TextBox txtNumberB;
         private System.Windows.Forms.Button btnCreateStory;
         private System.Windows.Forms.Label lblStoryResult;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
