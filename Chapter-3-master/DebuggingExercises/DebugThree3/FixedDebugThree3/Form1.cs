@@ -20,9 +20,10 @@ namespace FixedDebugThree3
         double total = 0;
         private void totalButton_Click(object sender, EventArgs e)
         {
-            double num = Convert.ToDouble(textBox1);
-            total = num;
-            outputLabel.Text = "Running total: ", total;
+            
+            double num = Convert.ToDouble(txtEnterNumber.Text);
+            total = total + num;
+            outputLabel2.Text = "Running total: " + total;
         }
     }
 }

@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblEnterANumber = new System.Windows.Forms.Label();
+            this.txtEnterNumber = new System.Windows.Forms.TextBox();
             this.totalButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
+            this.outputLabel2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -44,21 +45,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "This application keeps a running total\r\nof entered numbers";
             // 
-            // label2
+            // lblEnterANumber
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Enter a number";
+            this.lblEnterANumber.AutoSize = true;
+            this.lblEnterANumber.Location = new System.Drawing.Point(39, 99);
+            this.lblEnterANumber.Name = "lblEnterANumber";
+            this.lblEnterANumber.Size = new System.Drawing.Size(79, 13);
+            this.lblEnterANumber.TabIndex = 1;
+            this.lblEnterANumber.Text = "Enter a number";
             // 
-            // textBox1
+            // txtEnterNumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(57, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtEnterNumber.Location = new System.Drawing.Point(145, 98);
+            this.txtEnterNumber.Name = "txtEnterNumber";
+            this.txtEnterNumber.Size = new System.Drawing.Size(57, 20);
+            this.txtEnterNumber.TabIndex = 2;
             // 
             // totalButton
             // 
@@ -79,15 +80,24 @@
             this.outputLabel.TabIndex = 4;
             this.outputLabel.Text = "Running total :";
             // 
+            // outputLabel2
+            // 
+            this.outputLabel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.outputLabel2.Location = new System.Drawing.Point(170, 206);
+            this.outputLabel2.Name = "outputLabel2";
+            this.outputLabel2.Size = new System.Drawing.Size(100, 23);
+            this.outputLabel2.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.outputLabel2);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.totalButton);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtEnterNumber);
+            this.Controls.Add(this.lblEnterANumber);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Running Total";
@@ -99,10 +109,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblEnterANumber;
+        private System.Windows.Forms.TextBox txtEnterNumber;
         private System.Windows.Forms.Button totalButton;
         private System.Windows.Forms.Label outputLabel;
+        private System.Windows.Forms.Label outputLabel2;
     }
 }
 
