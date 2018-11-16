@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBirthYear = new System.Windows.Forms.TextBox();
+            this.txtCurrentYear = new System.Windows.Forms.TextBox();
             this.outputLabel = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -64,26 +64,26 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Enter the current year";
             // 
-            // textBox1
+            // txtBirthYear
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtBirthYear.Location = new System.Drawing.Point(162, 77);
+            this.txtBirthYear.Name = "txtBirthYear";
+            this.txtBirthYear.Size = new System.Drawing.Size(73, 20);
+            this.txtBirthYear.TabIndex = 3;
             // 
-            // textBox2
+            // txtCurrentYear
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(69, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtCurrentYear.Location = new System.Drawing.Point(162, 110);
+            this.txtCurrentYear.Name = "txtCurrentYear";
+            this.txtCurrentYear.Size = new System.Drawing.Size(73, 20);
+            this.txtCurrentYear.TabIndex = 4;
             // 
             // outputLabel
             // 
-            this.outputLabel.AutoSize = true;
+            this.outputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.outputLabel.Location = new System.Drawing.Point(44, 191);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(0, 13);
+            this.outputLabel.Size = new System.Drawing.Size(205, 28);
             this.outputLabel.TabIndex = 5;
             // 
             // calculateButton
@@ -103,8 +103,8 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.outputLabel);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCurrentYear);
+            this.Controls.Add(this.txtBirthYear);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -120,8 +120,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBirthYear;
+        private System.Windows.Forms.TextBox txtCurrentYear;
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Button calculateButton;
     }
